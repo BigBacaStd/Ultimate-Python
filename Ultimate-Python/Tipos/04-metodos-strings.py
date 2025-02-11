@@ -1,0 +1,11 @@
+animal = "  la DominGona"
+print(animal.upper())
+print(animal.lower())
+print(animal.strip().capitalize())
+print(animal.title())
+print(animal.strip())
+print(animal.rstrip())
+print(animal.find("Ing"))
+print(animal.replace("inG", "j"))
+print("inG" in animal)
+print("inG" not in animal)
