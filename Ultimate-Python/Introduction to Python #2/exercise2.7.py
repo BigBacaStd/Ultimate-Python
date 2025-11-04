@@ -3,7 +3,7 @@
 Write and execute a script which request user the user to input an integer number
 representing a year. Then, the script has to find out which the closest leap year
 following the one specified by the user. In case the user actually inputs a leap year,
-it would bethe solution for the request.
+it would be the solution for the request.
 
 Example: If the year inputs by the user is 1992 or 1993 the solution is '1992' or '1996', respectively.
 """
