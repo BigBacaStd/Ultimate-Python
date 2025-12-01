@@ -21,13 +21,13 @@ exam = float(input('Please enter Exam mark: '))
 
 final = 0.3*test + 0.2*lab + 0.5*exam
 
-if exam >= 5 and final >= 5:
+if final >= 6 and test > 4 and lab > 4 and exam > 5:
     print(f"You have passes the subject and your final mark is {final:.2f}.")
 
 elif final >= 5.5 and test >= 4.76:
     print(f"You have passes the subject and your final mark is {final:.2f}.")
 
-elif final >= 6 and test >4 and lab > 4 and exam > 5:
+elif exam >= 5 and final >= 5:
     print(f"You have passes the subject and your final mark is {final:.2f}.")
 else:
     print(f'You have not passed the subject your final mark is {final:.2f}.')
