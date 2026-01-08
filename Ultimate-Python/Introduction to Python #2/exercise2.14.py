@@ -13,5 +13,28 @@
 # Obese Class 2: BMI above 35.
 
 # Remark: The formulation to compute the BMI is BMI = weight / height 2
-# Example: If the weight and height input by the user ar e64 and 1.65, it must
+# Example: If the weight and height input by the user are 64 and 1.65, it must
 # display the message 'You are in the class: normal weight'.
+
+user_weight = float(input("Please enter weight in kilos: "))
+user_height = float(input("Please enter height in meters: "))
+
+bmi = user_weight / (user_height ** 2)
+
+print(f"Your calculated BMI is: {bmi:.2f}")
+
+if bmi < 18.5:
+    print("Category: Underweight")
+
+elif bmi <= 25:
+    print("Category: Normal weight")
+
+elif bmi <= 30:
+    print("Category: Overweight")
+
+elif bmi <= 35:
+    print("Category: Obese Class 1")
+
+else:
+    print("Category: Obese Class 2")
+
