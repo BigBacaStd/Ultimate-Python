@@ -42,3 +42,26 @@ print(f"Dear {guest_list[5]}, I would like to invite you to eat pizza tonight.")
 print(f"\nFinal guest list: {guest_list}")
 
 # TODO: Add code to handle the shrinking guest list
+
+print("Hey there! Unfortunately I can only invite 2 people for dinner. I am sorry!")
+
+guest_not_invited = guest_list.pop()
+print(f"I am sorry {guest_not_invited.title()}, you were un-invited to my dinner")
+
+guest_not_invited = guest_list.pop()
+print(f"I am sorry {guest_not_invited.title()}, you were un-invited to my dinner")
+
+guest_not_invited = guest_list.pop()
+print(f"I am sorry {guest_not_invited.title()}, you were un-invited to my dinner")
+
+guest_not_invited = guest_list.pop()
+print(f"I am sorry {guest_not_invited.title()}, you were un-invited to my dinner")
+
+print(f"Dear {guest_list[0]}, I would like to let you know that you are still invited to my dinner.")
+print(f"Dear {guest_list[1]}, I would like to let you know that you are still invited to my dinner.")
+
+del guest_list[0]
+del guest_list[0]
+
+print(guest_list)
+
