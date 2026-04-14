@@ -19,3 +19,7 @@ print(players[:4])
 # you can start with index 2 and omit the second index:
 
 print(players[2:])
+
+# If we want to output the last three players on the roaster we can use the slice [-3:]
+print(players[-3:])
+
