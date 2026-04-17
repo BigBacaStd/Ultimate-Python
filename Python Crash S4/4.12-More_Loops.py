@@ -18,3 +18,4 @@ print("\nMy friends favourite foods are:")
 for food in friend_foods:
     print(food)
 
+
