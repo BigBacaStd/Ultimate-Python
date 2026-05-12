@@ -18,4 +18,3 @@ elif age < 18:
 
 else:
     print("Your admission cost is $40")
-00
