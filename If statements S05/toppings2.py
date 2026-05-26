@@ -5,3 +5,8 @@ if 'Mushrooms'in requested_toppings:
 
 if 'Pepperoni' in requested_toppings:
     print("Adding Pepperoni")
+
+if 'Extra Cheese' in requested_toppings:
+    print("Adding Extra Cheese")
+
+print("\nFinished making your pizza")
