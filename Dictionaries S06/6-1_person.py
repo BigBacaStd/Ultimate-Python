@@ -10,8 +10,7 @@ person_I_know = {'first name': 'Emily', 'last name': 'Vargas', 'age': '16', 'cit
 first_name = person_I_know.get('first name')
 last_name = person_I_know.get('last name')
 age = person_I_know.get('age')
-city = person_I_know.get('city'
-                         )
+city = person_I_know.get('city')
 
 print(first_name)
 print(last_name)
