@@ -7,5 +7,5 @@
 
 favorite_numbers = {'Emily': '21', 'Ilse': '16', 'Polo': '18', 'Camila': '14', 'Elena': '9'}
 for name, number in favorite_numbers.items():
-    print(f"{name}´s favorite number is {number}.")
+    print(f"{name}'s favorite number is {number}.")
 
