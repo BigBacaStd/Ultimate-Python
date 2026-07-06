@@ -16,4 +16,4 @@ pizza_styles = {
 for pizza, engridients in pizza_styles.items():
     print(f"\nPizza Styles: {pizza.title()}")
     for toppings in engridients:
-        print(f"\tIngredients: {toppings.title()}")
+        print(f"\t-Ingredients: {toppings.title()}")
