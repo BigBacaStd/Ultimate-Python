@@ -8,3 +8,19 @@ sandwiches. After all the sandwiches have been made, print a message listing
 each sandwich that was made.
 """
 
+sandwich_orders = ['cheese', 'ham', 'beef']
+finished_sandwiches = []
+
+while sandwich_orders:
+    current_order = sandwich_orders.pop()
+
+    print(f"I made your {current_order.title()} sandwich.")
+    finished_sandwiches.append(current_order)
+
+
+print("\nList of sandwiches that were made:")
+for sandwich in finished_sandwiches:
+    print(sandwich.title())
+
+
+

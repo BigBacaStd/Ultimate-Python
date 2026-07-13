@@ -6,3 +6,24 @@ a message saying the deli has run out of pastrami, and then use a while loop to 
 occurrences of 'pastrami' from sandwich orders. Make sure no pastrami sandwiches end up in finished
 sandwiches.
 """
+
+
+sandwich_orders = ['cheese', 'pastrami', 'ham', 'beef', 'pastrami', 'egg', 'pastrami']
+finished_sandwiches = []
+
+print("The deli has run out of pastrami")
+
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+while sandwich_orders:
+    current_order = sandwich_orders.pop()
+
+    print(f"I made your {current_order.title()} sandwich.")
+    finished_sandwiches.append(current_order)
+
+
+print("\nList of sandwiches that were made:")
+for sandwich in finished_sandwiches:
+    print(sandwich.title())
+
