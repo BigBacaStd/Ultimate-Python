@@ -8,3 +8,8 @@ message printed on it.
 Call the function once using positional arguments to make a shirt. Call the function
 a second time using keyword arguments.
 """
+def make_shirt(shirt_size, shirt_message):
+    print(f"\nShirt size is: {shirt_size} and the message on the shirt says: {shirt_message}")
+
+make_shirt('Medium', 'The Ramones')
+make_shirt('Large', 'I love Python!')
