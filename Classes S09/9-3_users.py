@@ -9,3 +9,29 @@ a personalized greeting to the user.
 
 Create several instances representing different users, and call both methods for each user.
 """
+
+class User:
+    def __init__(self, first_name, last_name, gender, age, city):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.gender = gender
+        self.age = age
+        self.city = city
+
+    def describe_user(self):
+        print(f"{self.first_name} {self.last_name} {self.gender} {self.age} years old, from {self.city}")
+
+    def greet_user(self):
+        print(f"Hello {self.first_name} {self.last_name} how are you doing today?")
+
+
+the_user = User('Jorge', 'Vargas', 'Male', '37', 'Vallarta')
+the_user2 = User('Ilse', 'Lopez', 'Female', '33', 'Guadalajara')
+
+the_user.describe_user()
+the_user.greet_user()
+the_user2.describe_user()
+the_user2.greet_user()
+
+
+
