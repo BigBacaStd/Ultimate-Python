@@ -1,4 +1,4 @@
-# Python script
+#Python script
 
 """
 Make a class called Restaurant. The __init__() method for
