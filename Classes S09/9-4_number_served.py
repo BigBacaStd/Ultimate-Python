@@ -31,6 +31,13 @@ class Restaurant:
             """Print the restaurant is open."""
             print(f"{self.restaurant_name} is open!")
 
+    def set_number_served(self, number):
+        """Set the number of customers served to a specific value."""
+        self.number_served = number
+
+    def increment_number_served(self, addtional_customers):
+        """Add the given amount to the customer reading"""
+        self.number_served += addtional_customers
 
 # 1 Create the instance
 restaurant = Restaurant('La Tomate', 'Comida Mexicana')
@@ -42,6 +49,15 @@ print(f"Number served: {restaurant.number_served}" )
 restaurant.number_served = 25
 
 #4. Print the new value to verify the change
+print(f"Number served: {restaurant.number_served}")
+
+#5 Print the customer that has been served
+
+restaurant.set_number_served(50)
+print(f"Number served: {restaurant.number_served}")
+
+#6 Use increment_number_served() to add to that value
+restaurant.increment_number_served(60)
 print(f"Number served: {restaurant.number_served}")
 
 
