@@ -15,8 +15,8 @@ file, and once by storing the lines in a list and then looping over each line.
 path = Path('learning_python.txt')
 contents = path.read_text()
 
-lines = contents.splitlines()
-for line in lines:
+
+for line in contents.splitlines():
     print(f"I think {line}")
 
 print(contents)

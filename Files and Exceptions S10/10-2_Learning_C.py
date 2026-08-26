@@ -19,9 +19,8 @@ Print each modified line to the screen.
 path = Path('learning_python.txt')
 contents = path.read_text()
 
-lines = contents.splitlines()
 
-for line in lines:
+for line in contents.splitlines():
     new_message = line.lower().replace('python', 'C')
     print(f"I think {new_message}")
 
