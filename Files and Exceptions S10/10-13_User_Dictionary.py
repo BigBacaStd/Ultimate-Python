@@ -1,5 +1,15 @@
 #Python script
 
+"""
+The remember me example only stores once piece of information, the username.
+Expand this example by asking for two more pieces
+of information about the user, then store all the information you collect in
+a dictionary. Write this dictionary to a file using json.dumps()m and read it back
+in using json.loads(). Print a summary showing exactly what your program 
+remembers about the user.
+"""
+
+
 from pathlib import Path
 import json
 
@@ -28,12 +38,15 @@ def get_new_username(path):
 
 def greet_user():
     """Greet the user by name."""
-    path = Path('username.json')
+    path = Path('user_info.json')
     user_info = get_stored_username(path)
     if user_info:
-        print(f"Welcome back, {user_info}")
+        for key, value  in user_info.items():
+            print(f"{key}: {value}")
     else:
         user_info = get_new_username(path)
-        print(f"We'll remember you when you come back, {user_info.items()}!")
+        for key, value  in user_info.items():
+                print(f"{key}: {value}")
+        
 
 greet_user()
