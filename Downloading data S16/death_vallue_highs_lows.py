@@ -42,4 +42,7 @@ fig.autofmt_xdate()
 ax.set_ylabel("Temperature (F)", fontsize=16)
 ax.tick_params(labelsize=16)
 
+# Add this line to standardize the y-axis scale for both charts
+ax.set_ylim(10, 130)
+
 plt.show()

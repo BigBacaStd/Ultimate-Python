@@ -13,6 +13,7 @@ header_row = next(reader)
 
 # Extract dates and high temperatures.
 
+print(header_row)
 dates, highs, lows = [], [], []
 
 for row in reader:
@@ -38,6 +39,9 @@ ax.set_xlabel('', fontsize=16)
 fig.autofmt_xdate()
 ax.set_ylabel("Temperature (F)", fontsize=16)
 ax.tick_params(labelsize=16)
+
+# Add this line to standardize the y-axis scale for both charts
+ax.set_ylim(10, 130)
 
 plt.show()
 
