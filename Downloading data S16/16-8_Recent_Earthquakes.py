@@ -30,7 +30,7 @@ title = all_eq_data['metadata']['title']
 
 fig = px.scatter_geo(lat=lats, lon=lons, size=mags, title=title,
                      color=mags,
-                     labels={'color': 'Magnitude'},
+                     labels={'color': 'Salmon'},
                      projection='natural earth',
                      hover_name=eq_titles,
                      )
