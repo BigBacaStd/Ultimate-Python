@@ -27,6 +27,8 @@ for repo_dict in repo_dicts:
     repo_link = f"<a href='{repo_url}'>{repo_name}</a>"
     repo_links.append(repo_link)
 
+    stars.append(repo_dict['stargazers_count'])
+
 # Build hover text.
 
     owner = repo_dict['owner']['login']
@@ -42,5 +44,7 @@ fig = px.bar(x=repo_links, y=stars, title=title, labels=labels,
 
 fig.update_layout(title_font_size=28, xaxis_title_font_size=20,
                   yaxis_title_font_size=20)
+
+fig.update_traces(marker_color='SteelBlue', marker_opacity=0.6)
 
 fig.show()
